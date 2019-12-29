@@ -6,7 +6,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:cdv="http://cordova.apache.org/ns/1.0"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.lhmfid.net"
-        version   = "1.0.0">
+        version   = "6.0.0">
 		
 
 
@@ -110,6 +110,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 	 
      <application android:networkSecurityConfig="@xml/network_security_config" />
  </edit-config>
+ 
  <resource-file src="resources/android/xml/network_security_config.xml" 
  target="app/src/main/res/xml/network_security_config.xml" />
 
@@ -173,7 +174,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 	
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>200</string>
+    <string>300</string>
     </gap:config-file>
 	
 	
