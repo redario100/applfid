@@ -98,7 +98,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 	<gap:plugin name="cordova-plugin-camera" source="npm" version="2.3.0" />
 
 
-			<splash src="res/screen/android/screen.png" />
+<splash src="res/screen/android/screen.png" />
 		
 <platform name="android">
     <icon src="logo.png" /> 
