@@ -6,7 +6,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:cdv="http://cordova.apache.org/ns/1.0"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.lhmfid.net"
-        version   = "6.0.0">
+        version   = "1.0.0">
 		
 
 
@@ -180,7 +180,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
         <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
     -->
 
-    <access origin="*" browserOnly="true"/>
+    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
 	<allow-navigation href="*" />
