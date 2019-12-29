@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-deeppurple">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  
+   <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Framework7</title>
+  <link rel="stylesheet" href="http://labodev.com/framework7.bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@3.0.0/css/framework7-icons.min.css">
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+
+
+  <link rel="stylesheet" href="css/app.css">
+
+  
+  
+  
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+  
+  <style>
+  a.tab-link {
+    border-top: 3px solid white !important;
+}
+
+
+.message:not(.message-last) .message-avatar
+{
+opacity:1 !important;
+}
+
+
+.messages {
+
+    margin-bottom: 60px;
+	
+	}
+.roundi
+{
+    border-radius: 100%;
+	}
+
+  .pht
+  {
+  width:75%;
+  border-radius:100%;
+  }
+  h3
+  {
+  font-size:1em;
+  }
+  
+  input[type="text"], input[type="email"], input[type="number"], textarea, input[type="tel"] {
+    border-bottom: 1px solid #e2e2e2 !important;
+}
+
+.titall2{
+    color: #565656;
+    font-size: 17px;
+    line-height: 22px;
+    padding: 0px;
+    margin: 0px 15px;
+}
+  
+  span.tabbar-label {
+    font-size: 11px !important;
+}
+
+li.jio.item-content.item-input {
+    border: none;
+}
+  
+.navbar .title{
+
+    font-weight: 200 !important;
+    letter-spacing: 0.6px;
+}
+  .col
+  {
+  width:33.33% !important;
+  float:left;
+  text-align:center;
+  }
+  
+  .img1
+  {
+  background-image:url("./img/im1.jpg");
+     background-size: cover;
+    height: 100px;
+    font-size: 20px;
+  
+  }
+  
+    .img2
+  {
+  background-image:url("./img/im2.jpg");
+     background-size: cover;
+    height: 100px;
+    font-size: 20px;
+  
+  }
+  
+      .img3
+  {
+  background-image:url("./img/im3.jpg");
+     background-size: cover;
+    height: 100px;
+    font-size: 20px;
+  
+  }
+  
+  span.tittot {
+    color: #565e96;
+    font-size: 27px;
+    line-height: 33px;
+    font-family: 'Russo One', sans-serif !important;
+}
+
+.list li {
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+}
+	 
+
+.deta
+{
+    font-size: 15px;
+    font-weight: 300;
+	color: #525252;
+	text-align:justify;
+}
+
+.list ul:before
+{
+display:none;
+}
+.photo-browser-page .toolbar i.icon.icon-forward, .photo-browser-page .toolbar i.icon.icon-back {
+    color: #565e96;
+}
+
+
+.hor
+{
+    font-size: 13px;
+    color: #586698;
+    text-align: left;
+	}
+
+.detp
+{
+    font-size: 18px !important;
+    color: #39489a;
+	}
+
+
+.titlep
+{
+position: absolute;
+    bottom: 66px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+	}
+.titall{
+    color: black;
+    font-size: 19px;
+    line-height: 32px;
+}
+
+.list.media-list {
+    margin-bottom: 80px !important;
+}
+
+.btop
+{
+border-top: 1px solid silver;
+}
+
+.pom
+{
+    font-size: 17px;
+    margin: -22px 0px;
+    padding: 0px 0px 25px 0px;
+    display: block;
+    text-transform: uppercase;
+    color: #293479;
+    letter-spacing: 0.5px;
+	}
+
+
+  </style>
+</head>
+
+<body class="color-theme-deeppurple">
+  <div id="app">
+
+    <div class="panel panel-left panel-left-1 panel-cover panel-resizable panel-init">
+      <div >
+<div style="text-align:center">	  
+<img style="width: 65px;margin: 0 auto;display: block;padding: 70px 0px 5px 0px;" src="./img/engineer.png"><br>
+<div class="pom">LHM.Fidélité</div>
+</div>
+<div class="list">
+<ul>
+<li onclick="mainView.router.navigate('/');closepanel();">
+<div class="item-link item-content">
+<div class="item-media"><i class="icon f7-icons">home</i></div>
+<div class="item-inner">
+<div class="item-title">Accueil</div>
+</div>
+</div>
+</li>
+<li onclick="mainView.router.navigate('/profil/');closepanel();">
+<div class="item-link item-content">
+<div class="item-media"><i class="icon f7-icons">briefcase</i></div>
+<div class="item-inner">
+<div class="item-title">Projets</div>
+</div>
+</div>
+</li>
+
+
+<li onclick="mainView.router.navigate('/ajouter/');closepanel();">
+<div class="item-link item-content">
+<div class="item-media"><i class="icon f7-icons">add</i></div>
+<div class="item-inner">
+<div class="item-title">Ajouter un projet</div>
+</div>
+</div>
+</li>
+
+
+
+
+
+<li onclick="mainView.router.navigate('/notifs/');closepanel();">
+<div class="item-link item-content">
+<div class="item-media"><i class="icon f7-icons">bell</i></div>
+<div class="item-inner">
+<div class="item-title">Notifications</div>
+</div>
+</div>
+</li>
+
+
+<li onclick="mainView.router.navigate('/chat1/');closepanel();">
+<div class="item-link item-content">
+<div class="item-media"><i class="icon f7-icons">chat_bubble_text</i></div>
+<div class="item-inner">
+<div class="item-title">Discussions</div>
+</div>
+</div>
+</li>
+
+
+</ul>
+</div>
+      </div>
+    </div>
+
+    <div class="view view-main view-init">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+       <div class="left">
+<a href="#" style="color:white" class="link icon-only panel-open" data-panel="left">
+<i class="material-icons">menu</i>
+
+</a>
+</div>
+            <div class="title">Fid.LHM</div>
+			
+			
+      
+          </div>
+        </div>
+        <div  class="page-content">
+	
+
+<div class="card">
+<div onclick="mainView.router.navigate('/profil2/');" class="img1 card-content card-content-padding">
+Projets validés<br>
+
+<span class="tittot">1</span>
+</div>
+
+</div>
+
+
+<div class="card">
+<div onclick="mainView.router.navigate('/profil/');" class="img2 card-content card-content-padding">
+Projets en cours de traitement<br>
+
+<span class="tittot">3</span>
+</div>
+
+</div>
+
+
+
+<div class="card">
+<div class="img3 card-content card-content-padding">
+Points fidélités<br>
+<span class="tittot">550</span>
+</div>
+
+</div>
+
+
+<div class="list">
+
+
+<ul>
+<div class="block-title titall">Historique des projets</div>
+<li class="btop">
+<div class="item-content">
+<div class="item-media"><i style="color: #5f5f63;" class="f7-icons">briefcase_fill</i></div>
+<div class="item-inner">
+<div class="item-title">Immeuble R+4 à bouskoura, supérficie 400m2</div>
+<div class="item-after"><span class="badge">En cours</span></div>
+</div>
+</div>
+</li>
+
+<li>
+<div class="item-content">
+<div class="item-media"><i style="color: #5f5f63;" class="f7-icons">briefcase_fill</i></div>
+<div class="item-inner">
+<div class="item-title">Lotissement Sara, route mediouna</div>
+<div class="item-after"><span class="badge color-blue">Accepté</span></div>
+</div>
+</div>
+</li>
+
+
+<li>
+<div class="item-content">
+<div class="item-media"><i style="color: #5f5f63;" class="f7-icons">briefcase_fill</i></div>
+<div class="item-inner">
+<div class="item-title">Immeuble Avenue Soukrate R+3</div>
+<div class="item-after"><span class="badge color-green">Validé</span></div>
+</div>
+</div>
+</li>
+
+
+</ul>
+
+
+
+
+<div style="margin-top:10px" class="list media-list">
+<ul>
+<div class="block-title titall">Derniers Commentaires</div>
+<li class="btop">
+<a href="/projet/" class="item-link item-content">
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#565e96 !important" class="item-title">Immeuble Avenue Soukrate R+3</div>
+<div class="item-after">Mardi à 17:14</div>
+</div>
+<div class="item-subtitle">Nouveau message de Mohammed Ali</div>
+<div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+</div>
+</a>
+</li>
+<li>
+<a href="/projet/" class="item-link item-content">
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#565e96 !important" class="item-title">Immeuble R+4 à bouskoura</div>
+<div class="item-after">Lundi à 08:11</div>
+</div>
+<div class="item-subtitle">Nouveau message de Samir Ouazzani</div>
+<div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+</div>
+</a>
+</li>
+<li>
+<a href="/projet/" class="item-link item-content">
+<div class="item-inner">
+<div class="item-title-row">
+<div style="color:#565e96 !important" class="item-title">Construction d'un magasin</div>
+<div class="item-after">Jeudi à 16:48</div>
+</div>
+<div class="item-subtitle">Nouveau message de Salma Berrada</div>
+<div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+</div>
+</a>
+</li>
+
+</ul>
+</div>
+
+
+</div>
+	
+        </div>
+		
+
+      </div>
+	  
+	  
+	  		<div class="toolbar tabbar tabbar-labels toolbar-bottom">
+<div class="toolbar-inner">
+
+<a href="/" data-transition="f7-push" class="tab-link">
+<i class="icon f7-icons">home</i>
+
+<span class="tabbar-label">Accueil</span>
+</a>
+
+
+<a href="/profilall/" class="tab-link">
+<i class="icon f7-icons">briefcase<span class="badge color-red">4</span></i>
+
+<span class="tabbar-label">Projets</span>
+</a>
+<a href="/notifs/" class="tab-link">
+<i class="icon f7-icons">bell<span class="badge color-red">5</span></i>
+
+<span class="tabbar-label">Notifications</span>
+</a>
+
+<a href="/chat1/" class="tab-link">
+<i class="icon f7-icons">chat_bubble_text<span class="badge color-red">3</span></i>
+
+<span class="tabbar-label">Chat</span>
+</a>
+
+
+</div>
+</div>
+    </div>
+	
+  </div>
+  
+  
+</body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/4.5.2/js/framework7.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/877563c9e8.js" crossorigin="anonymous"></script>
+ 
+ 
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+
+
+</html>
