@@ -107,10 +107,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 <platform name="android">
     <icon src="logo.png" /> 
 
-  
-      <plugin name="cordova-android-support-gradle-release" source="npm">
-        <variable name="ANDROID_SUPPORT_VERSION" value="29.0.0"/>
-    </plugin>
+
 	
 </platform>
 
