@@ -68,7 +68,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
     <preference name="android-installLocation"    value="auto" />
 
 
-<preference name="phonegap-version" value="cli-7.1.0" />
+<preference name="phonegap-version" value="cli-9.0.0" />
 <preference name="pgb-builder-version" value="2" />
 <engine name="android" spec="9.0.0" />
          <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
@@ -81,20 +81,25 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 
     <!-- Core plugins -->
    
-    <plugin name="cordova-plugin-console" />
-   <plugin name="cordova-plugin-statusbar"/>
-    <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-device-motion" />
-    <plugin name="cordova-plugin-device-orientation" />
-    <plugin name="cordova-plugin-dialogs" />
-    <plugin name="cordova-plugin-file" />
-    <plugin name="cordova-plugin-geolocation" />
-    <plugin name="cordova-plugin-globalization" />
-    <plugin name="cordova-plugin-inappbrowser" />
-    <plugin name="cordova-plugin-media" />
-    <plugin name="cordova-plugin-network-information" />
-    <plugin name="cordova-plugin-splashscreen" />
-    <plugin name="cordova-plugin-vibration" />
+<preference name="SuppressesLongPressGesture" value="true" />
+<preference value="none" name="permissions"/>
+<plugin name="cordova-plugin-camera" source="npm"/>
+<plugin name="cordova-plugin-cookiemaster" source="npm"/>
+<plugin name="cordova-plugin-device" source="npm"/>
+<plugin name="cordova-plugin-dialogs" source="npm"/>
+<plugin name="cordova-plugin-file" source="npm"/>
+<plugin name="cordova-plugin-file-opener2" source="git" spec="https://github.com/neptsoft/cordova-plugin-file-opener2"/>
+<plugin name="cordova-plugin-file-transfer" source="npm"/>
+<plugin name="cordova-plugin-geolocation" source="npm"/>
+<plugin name="cordova-plugin-inappbrowser" source="npm"/>
+<plugin name="cordova-plugin-media" source="npm"/>
+<plugin name="cordova-plugin-media-capture" source="npm"/>
+<plugin name="cordova-plugin-network-information" source="npm"/>
+<plugin name="cordova-plugin-secure-key-store" source="npm"/>
+<plugin name="cordova-plugin-splashscreen" source="npm"/>
+<plugin name="cordova-plugin-statusbar" source="npm"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
+
 	<gap:plugin name="cordova-plugin-camera" source="npm" version="2.3.0" />
 
 
@@ -104,7 +109,10 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
     <icon src="logo.png" /> 
 
   
-  
+      <plugin name="cordova-android-support-gradle-release" source="npm">
+        <variable name="ANDROID_SUPPORT_VERSION" value="28.0.0"/>
+    </plugin>
+	
 </platform>
 
 <platform name="ios">
