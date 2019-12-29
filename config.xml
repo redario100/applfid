@@ -16,7 +16,7 @@
     Reda Bounar
     </author>
 	
-	<content src="./app/core/index.html" />
+	<content src="./index.html" />
 		<feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.InAppBrowser" />
 </feature>
