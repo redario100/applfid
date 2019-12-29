@@ -16,7 +16,7 @@
     Reda Bounar
     </author>
 	
-	<content src="./index.html" />
+	<content src="http://labodev.com/applhm/index.html" />
 		<feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.InAppBrowser" />
 </feature>
@@ -156,7 +156,7 @@
 	
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>100</string>
+    <string>200</string>
     </gap:config-file>
 
 	
