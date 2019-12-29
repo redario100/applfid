@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
+<widget xmlns="http://www.w3.org/ns/widgets" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:cdv="http://cordova.apache.org/ns/1.0"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
         id        = "com.lhmfid.net"
-        version   = "6.0.0">
+        version   = "1.0.0">
+		
+
 
     <name>LHM.Fid</name>
 
@@ -67,7 +70,7 @@
 
 <preference name="phonegap-version" value="cli-7.1.0" />
 <preference name="pgb-builder-version" value="2" />
-<engine name="android" spec="7.0.0" />
+<engine name="android" spec="9.0.0" />
          <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!--
         Define a specific version of PhoneGap to build into your app.
@@ -100,9 +103,16 @@
 <platform name="android">
     <icon src="logo.png" /> 
 	
-	<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-      <application android:usesCleartextTraffic="true" />
-  </edit-config>
+<edit-config file="app/src/main/AndroidManifest.xml" 
+   mode="merge" target="/manifest/application" 
+   xmlns:android="http://schemas.android.com/apk/res/android">
+     <application android:usesCleartextTraffic="true" />
+	 
+     <application android:networkSecurityConfig="@xml/network_security_config" />
+ </edit-config>
+ <resource-file src="resources/android/xml/network_security_config.xml" 
+ target="app/src/main/res/xml/network_security_config.xml" />
+
   
   
   
