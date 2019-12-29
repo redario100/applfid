@@ -38,7 +38,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
    <preference name="AppendUserAgent" value="Cordova" />
 	
 	   <preference  name = "android-minSdkVersion" value ="14" />
-    <preference  name = "android-targetSdkVersion" value ="28" />
+    <preference  name = "android-targetSdkVersion" value ="29" />
 	
 	<preference name="fullscreen" value="false" />
 	 <!-- Customize your app and platform with the preference element. -->
@@ -100,7 +100,6 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 <plugin name="cordova-plugin-statusbar" source="npm"/>
 <plugin name="cordova-plugin-whitelist" source="npm"/>
 
-	<gap:plugin name="cordova-plugin-camera" source="npm" version="2.3.0" />
 
 
 <splash src="res/screen/android/screen.png" />
@@ -110,7 +109,7 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 
   
       <plugin name="cordova-android-support-gradle-release" source="npm">
-        <variable name="ANDROID_SUPPORT_VERSION" value="28.0.0"/>
+        <variable name="ANDROID_SUPPORT_VERSION" value="29.0.0"/>
     </plugin>
 	
 </platform>
