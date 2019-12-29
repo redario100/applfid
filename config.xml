@@ -81,25 +81,21 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 
     <!-- Core plugins -->
    
-<preference name="SuppressesLongPressGesture" value="true" />
-<preference value="none" name="permissions"/>
-<plugin name="cordova-plugin-camera" source="npm"/>
-<plugin name="cordova-plugin-cookiemaster" source="npm"/>
-<plugin name="cordova-plugin-device" source="npm"/>
-<plugin name="cordova-plugin-dialogs" source="npm"/>
-<plugin name="cordova-plugin-file" source="npm"/>
-<plugin name="cordova-plugin-file-opener2" source="git" spec="https://github.com/neptsoft/cordova-plugin-file-opener2"/>
-<plugin name="cordova-plugin-file-transfer" source="npm"/>
-<plugin name="cordova-plugin-geolocation" source="npm"/>
-<plugin name="cordova-plugin-inappbrowser" source="npm"/>
-<plugin name="cordova-plugin-media" source="npm"/>
-<plugin name="cordova-plugin-media-capture" source="npm"/>
-<plugin name="cordova-plugin-network-information" source="npm"/>
-<plugin name="cordova-plugin-secure-key-store" source="npm"/>
-<plugin name="cordova-plugin-splashscreen" source="npm"/>
-<plugin name="cordova-plugin-statusbar" source="npm"/>
-<plugin name="cordova-plugin-whitelist" source="npm"/>
-
+    <plugin name="cordova-plugin-console" />
+   <plugin name="cordova-plugin-statusbar"/>
+    <plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-device-motion" />
+    <plugin name="cordova-plugin-device-orientation" />
+    <plugin name="cordova-plugin-dialogs" />
+    <plugin name="cordova-plugin-file" />
+    <plugin name="cordova-plugin-geolocation" />
+    <plugin name="cordova-plugin-globalization" />
+    <plugin name="cordova-plugin-inappbrowser" />
+    <plugin name="cordova-plugin-media" />
+    <plugin name="cordova-plugin-network-information" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-vibration" />
+	<gap:plugin name="cordova-plugin-camera" source="npm" version="2.3.0" />
 
 
 <splash src="res/screen/android/screen.png" />
@@ -107,7 +103,10 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0"
 <platform name="android">
     <icon src="logo.png" /> 
 
-
+  
+      <plugin name="cordova-android-support-gradle-release" source="npm">
+        <variable name="ANDROID_SUPPORT_VERSION" value="29.0.0"/>
+    </plugin>
 	
 </platform>
 
