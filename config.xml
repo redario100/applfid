@@ -98,6 +98,12 @@
 		
 <platform name="android">
     <icon src="logo.png" /> 
+	
+	<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+      <application android:usesCleartextTraffic="true" />
+  </edit-config>
+  
+  
   
 </platform>
 
@@ -158,6 +164,13 @@
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>200</string>
     </gap:config-file>
+	
+	
+	  <config-file platform="android" parent="/manifest" mode="merge">
+
+        <application android:usesCleartextTraffic="true" />
+
+    </config-file>
 
 	
 	
